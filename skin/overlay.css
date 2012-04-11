@@ -1,0 +1,49 @@
+/* This is just an example. You shouldn't do this. */
+menuitem#helloworld-hello {
+  color: red !important;
+}
+#popup_text {
+border: 2px solid #31322D;
+background-color: #31322D;
+opacity:0.7;
+-moz-border-radius: 1em;
+-moz-opacity: 0.3;
+width: 300px;
+min-width : 300px;
+max-width : 300px;
+min-height : 120px;
+max-height : 120px;
+height : 120px;
+}
+
+#popup_text:hover {
+border: 2px solid #31322D;
+background-color: #31322D;
+opacity:1;
+-moz-border-radius: 1em;
+-moz-opacity: 0.3;
+
+
+}
+
+#current_feed{
+padding: 3px;
+color:#acacab;
+font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+border: 8px solid #31322D;
+font-family: georgia,arial,sans-serif;
+font-size: 11px;
+-moz-border-radius: 1em;
+-moz-opacity: 4;
+width: 300px;
+}
+
+#feed_number
+{
+color:#acacab;
+border: 8px solid #31322D;
+font-family: georgia,arial,sans-serif;
+font-size: 10px;
+
+}
+

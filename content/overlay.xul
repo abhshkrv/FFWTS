@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://helloworld/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://helloworld/locale/overlay.dtd">
+<overlay id="helloworld-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <script>
+  var abc = 1;
+  </script>
+ 
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="helloworld-hello" label="&helloworld;" 
+              oncommand="HelloWorld.onMenuItemCommand(event);"/>
+			    <!--menuitem id="helloworld-hello" label="&helloworld;" onclick="displayDate()"/!-->
+  </menupopup>
+    <toolbox id="navigator-toolbox">
+
+  <toolbar  id="nav-toolbar">
+  <button label="" onclick="displayDate()" style="list-style-image: url('logo.png')" />
+	<label id="unread" value = "9"></label>
+	<menulist id = "matches">
+  <menupopup />
+   
+</menulist>
+
+
+  </toolbar>
+
+
+<popupset>
+  <menupopup id="optionsmenu">
+    <menuitem label="Go to BBC SPORT" oncommand="openBBC()"/>
+    <menuitem label="Preferences"  oncommand="openPrefWindow()"/>
+  </menupopup>
+</popupset>
+
+
+<toolbar id = "FFWTS">
+  <panel id = "popup_text" width = "300">
+  <vbox>
+  <description id ="current_feed" style="width:300px;">
+  
+
+ 
+  </description>
+  <hbox align = "right">
+  <button style="list-style-image: url('prev.png')" onclick="showPrevFeed()" align ="left" width = "16"/> <label id = "feed_number" value="50" ></label><label>/50</label>  <button align ="right" onclick="showNextFeed()" width = "16" style="list-style-image: url('next.png')"/>
+    </hbox>
+   </vbox>
+   
+  </panel>  
+    <description value="" popup="popup_text"/>
+     <button style="list-style-image: url('logo.png')" popup="popup_text" context="optionsmenu"></button>
+    </toolbar>
+	
+  
+</toolbox>
+  
+</overlay>

@@ -1,0 +1,19 @@
+data/build.sh.i
+data/build_mac.sh.i
+data/config_build.sh.i
+data/locale/en-US/overlay.dtd.i
+data/readme.txt.i
+data/content/jquery-1.7.1.min.js.i
+data/helloworld.xpi.i
+data/chrome.manifest.i
+data/skin/overlay.css.i
+data/content/fucntion.js.i
+data/content/New Text Document.txt.i
+data/.hgignore.i
+data/content/window.xul.i
+data/install.rdf.i
+data/content/overlay.js.i
+data/content/logo.png.i
+data/content/overlay.xul.i
+data/content/hello.xul.i
+data/locale/en-US/hello.dtd.i
