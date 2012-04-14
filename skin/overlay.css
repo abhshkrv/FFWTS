@@ -2,6 +2,7 @@
 menuitem#helloworld-hello {
   color: red !important;
 }
+
 #popup_text {
 border: 2px solid #31322D;
 background-color: #31322D;
@@ -38,6 +39,10 @@ font-size: 11px;
 width: 300px;
 }
 
+.team-name{
+font-weight : bold;
+}
+
 #feed_number
 {
 color:#acacab;
@@ -47,3 +52,60 @@ font-size: 10px;
 
 }
 
+#all_feed_1
+{
+min-width : 300px;
+max-width : 300px;
+
+}
+
+#yo
+{
+min-width : 30px;
+max-width : 30px;
+min-height : 25px;
+max-height : 25px;
+height : 25px;
+background-color: blue;
+}
+
+#yo1
+{
+min-width : 30px;
+max-width : 30px;
+min-height : 25px;
+max-height : 25px;
+height : 25px;
+background-color: blue;
+}
+
+#expand
+{
+
+min-width : 30px;
+max-width : 30px;
+min-height : 25px;
+max-height : 25px;
+
+}
+
+
+#prev
+{
+/*background-color: red;*/
+min-width : 25px;
+max-width : 25px;
+min-height : 25px;
+max-height : 25px;
+
+}
+
+#next
+{
+/*background-color: red;*/
+min-width : 25px;
+max-width : 25px;
+min-height : 25px;
+max-height : 25px;
+
+}

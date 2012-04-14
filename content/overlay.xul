@@ -1,14 +1,91 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://helloworld/skin/overlay.css" type="text/css"?>
+
 <!DOCTYPE overlay SYSTEM "chrome://helloworld/locale/overlay.dtd">
 <overlay id="helloworld-overlay"
-         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+		 	xmlns:html="http://www.w3.org/1999/xhtml">
   <script src="overlay.js"/>
   <script>
   var abc = 1;
   </script>
  
+<toolbar id = "nav-bar">
+  <panel id = "full_text" type = "arrow">
+  <vbox style="overflow-y:auto; overflow-x:hidden;">
+	
+	<label id = "options"> <button id = "expand" oncommand="toggleOptions()" >+</button>Options</label>
+	<label id = "update">Update every<textbox id="mins" onchange="update_time()" value ='1'></textbox>mins</label>
+	<checkbox label="Sound" id = "sound" checked="false"/>
+	<checkbox label="Pause" id = "pause" checked="false" oncommand="pause_addon()" />
+	<label id = "teams">
+	<checkbox id ="Arsenal" label="Arsenal" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Aston Villa" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox id="Blackburn" label="Blackburn" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Bolton" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Chelsea" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox label="Everton" checked="false" class ="team-name"  oncommand="loadAllstream()" /><checkbox label="Fulham" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Liverpool" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox id="Man Utd" label="Man Utd" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox id="Man City" label="Man City" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox label="Newcastle" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Norwich" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="QPR" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Stoke" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Sunderland" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox label="Swansea" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Totttenham" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="West Brom" checked="false"/><checkbox label="Wigan" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Wolves" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	</label>
+	<html:hr/>
+  
+<description id ="all_feed_0" width = "290px"/><html:hr/>
+<description id ="all_feed_1" width = "290px"></description><html:hr/>
+<description id ="all_feed_2" width = "290px"/><html:hr/>
+<description id ="all_feed_3" width = "290px"/><html:hr/>
+<description id ="all_feed_4" width = "290px"/><html:hr/>
+<description id ="all_feed_5" width = "290px"/><html:hr/>
+<description id ="all_feed_6" width = "290px"/><html:hr/>
+<description id ="all_feed_7" width = "290px"/><html:hr/>
+<description id ="all_feed_8" width = "290px"/><html:hr/>
+<description id ="all_feed_9" width = "290px"/><html:hr/>
+<description id ="all_feed_10" width = "290px"/><html:hr/>
+<description id ="all_feed_11" width = "290px"/><html:hr/>
+<description id ="all_feed_12" width = "290px"/><html:hr/>
+<description id ="all_feed_13" width = "290px"/><html:hr/>
+<description id ="all_feed_14" width = "290px"/><html:hr/>
+<description id ="all_feed_15" width = "290px"/><html:hr/>
+<description id ="all_feed_16" width = "290px"/><html:hr/>
+<description id ="all_feed_17" width = "290px"/><html:hr/>
+<description id ="all_feed_18" width = "290px"/><html:hr/>
+<description id ="all_feed_19" width = "290px"/><html:hr/>
+<description id ="all_feed_20" width = "290px"/><html:hr/>
+<description id ="all_feed_21" width = "290px"/><html:hr/>
+<description id ="all_feed_22" width = "290px"/><html:hr/>
+<description id ="all_feed_23" width = "290px"/><html:hr/>
+<description id ="all_feed_24" width = "290px"/><html:hr/>
+<description id ="all_feed_25" width = "290px"/><html:hr/>
+<description id ="all_feed_26" width = "290px"/><html:hr/>
+<description id ="all_feed_27" width = "290px"/><html:hr/>
+<description id ="all_feed_28" width = "290px"/><html:hr/>
+<description id ="all_feed_29" width = "290px"/><html:hr/>
+<description id ="all_feed_30" width = "290px"/><html:hr/>
+<description id ="all_feed_31" width = "290px"/><html:hr/>
+<description id ="all_feed_32" width = "290px"/><html:hr/>
+<description id ="all_feed_33" width = "290px"/><html:hr/>
+<description id ="all_feed_34" width = "290px"/><html:hr/>
+<description id ="all_feed_35" width = "290px"/><html:hr/>
+<description id ="all_feed_36" width = "290px"/><html:hr/>
+<description id ="all_feed_37" width = "290px"/><html:hr/>
+<description id ="all_feed_38" width = "290px"/><html:hr/>
+<description id ="all_feed_39" width = "290px"/><html:hr/>
+<description id ="all_feed_40" width = "290px"/><html:hr/>
+<description id ="all_feed_41" width = "290px"/><html:hr/>
+<description id ="all_feed_42" width = "290px"/><html:hr/>
+<description id ="all_feed_43" width = "290px"/><html:hr/>
+<description id ="all_feed_44" width = "290px"/><html:hr/>
+<description id ="all_feed_45" width = "290px"/><html:hr/>
+<description id ="all_feed_46" width = "290px"/><html:hr/>
+<description id ="all_feed_47" width = "290px"/><html:hr/>
+<description id ="all_feed_48" width = "290px"/><html:hr/>
+<description id ="all_feed_49" width = "290px"/><html:hr/>
+<description id ="all_feed_50" width = "290px"/>
+   </vbox>
+   
+  </panel>  
+    
+     <button id = "yo" value = "click" popup="full_text" style="list-style-image: url('abihereyougo.png')"  context="optionsmenu" ></button>
+	 <button id = "yo1" value = "click" popup="full_text" style="list-style-image: url('logo.jpg')"  context="optionsmenu"  hidden="true"></button>
+    </toolbar>
 
+	
   <menupopup id="menu_ToolsPopup">
     <menuitem id="helloworld-hello" label="&helloworld;" 
               oncommand="HelloWorld.onMenuItemCommand(event);"/>
@@ -17,16 +94,16 @@
     <toolbox id="navigator-toolbox">
 
   <toolbar  id="nav-toolbar">
-  <button label="" onclick="displayDate()" style="list-style-image: url('logo.png')" />
-	<label id="unread" value = "9"></label>
-	<menulist id = "matches">
+  <button label="" onclick="displayDate()" style="list-style-image: url('logo.jpg')"  hidden="true" />
+	<label id="unread" value = "9"  hidden="true"></label>
+	<menulist id = "matches"  hidden="true">
   <menupopup />
    
 </menulist>
 
 
   </toolbar>
-
+	
 
 <popupset>
   <menupopup id="optionsmenu">
@@ -36,7 +113,7 @@
 </popupset>
 
 
-<toolbar id = "FFWTS">
+<toolbar id = "FFWTS"  >
   <panel id = "popup_text" width = "300">
   <vbox>
   <description id ="current_feed" style="width:300px;">
@@ -44,15 +121,25 @@
 
  
   </description>
+  
+  
   <hbox align = "right">
-  <button style="list-style-image: url('prev.png')" onclick="showPrevFeed()" align ="left" width = "16"/> <label id = "feed_number" value="50" ></label><label>/50</label>  <button align ="right" onclick="showNextFeed()" width = "16" style="list-style-image: url('next.png')"/>
+  <button id = "prev" style="list-style-image: url('prev.png')" onclick="showPrevFeed()" align ="left" width = "16"/> <label id = "feed_number" value="50" ></label><label>/50</label>  <button id="next" align ="right" onclick="showNextFeed()" width = "16" style="list-style-image: url('next.png')"/>
     </hbox>
    </vbox>
    
   </panel>  
     <description value="" popup="popup_text"/>
      <button style="list-style-image: url('logo.png')" popup="popup_text" context="optionsmenu"></button>
+	 <audio xmlns="http://www.w3.org/1999/xhtml" id="clickSound" src="click.ogg" />
     </toolbar>
+	
+	
+	
+	
+	
+	
+	
 	
   
 </toolbox>
