@@ -40,7 +40,45 @@ width: 300px;
 }
 
 .team-name{
-font-weight : bold;
+
+min-width : 90px;
+max-width : 90px;
+font-family: Kalinga,sans-serif;
+
+}
+
+#options
+{
+font-family: Kalinga,
+             sans-serif;
+}
+
+#update
+{
+font-family: Kalinga,
+             sans-serif;
+}
+
+#Heading1
+{
+font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+font-size: 16px;
+text-align: center;
+font-weight:bold;
+
+}
+
+#Heading-comm{
+font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+font-weight:bold;
+text-align:center;
+font-size: 14px;
+
+}
+
+.comm_feed{
+
+font-family: Kalinga,sans-serif;
 }
 
 #feed_number
@@ -49,6 +87,21 @@ color:#acacab;
 border: 8px solid #31322D;
 font-family: georgia,arial,sans-serif;
 font-size: 10px;
+
+}
+
+#full_text{
+background-color: #dbdbdb;
+max-width : 375px;
+min-width: 375px;
+max-height : 600px;
+}
+
+#feed_box{
+background-color: #dbdbdb;
+width:330px;
+max-height : 600px;
+background-image:url('background.jpg');
 
 }
 

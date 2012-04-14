@@ -12,71 +12,88 @@
  
 <toolbar id = "nav-bar">
   <panel id = "full_text" type = "arrow">
-  <vbox style="overflow-y:auto; overflow-x:hidden;">
 	
+  <vbox id="feed_box" style="overflow-y:auto; overflow-x:hidden;">
+  <label id = "Heading1"> Fergie Fergie, What's the score?<html:hr/></label>
 	<label id = "options"> <button id = "expand" oncommand="toggleOptions()" >+</button>Options</label>
 	<label id = "update">Update every<textbox id="mins" onchange="update_time()" value ='1'></textbox>mins</label>
-	<checkbox label="Sound" id = "sound" checked="false"/>
+	<checkbox label="Sound" id = "sound" checked="false" hidden="true"/>
 	<checkbox label="Pause" id = "pause" checked="false" oncommand="pause_addon()" />
 	<label id = "teams">
-	<checkbox id ="Arsenal" label="Arsenal" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Aston Villa" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox id="Blackburn" label="Blackburn" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Bolton" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Chelsea" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
-	<checkbox label="Everton" checked="false" class ="team-name"  oncommand="loadAllstream()" /><checkbox label="Fulham" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Liverpool" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox id="Man Utd" label="Man Utd" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox id="Man City" label="Man City" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
-	<checkbox label="Newcastle" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Norwich" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="QPR" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Stoke" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Sunderland" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
-	<checkbox label="Swansea" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Totttenham" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="West Brom" checked="false"/><checkbox label="Wigan" checked="false" class ="team-name"  oncommand="loadAllstream()"/><checkbox label="Wolves" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id ="Arsenal" label="Arsenal" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "AstonVilla" label="Aston Villa" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id="Blackburn" label="Blackburn" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Bolton" label="Bolton" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Chelsea" label="Chelsea" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Everton" label="Everton" checked="false" class ="team-name"  oncommand="loadAllstream()" />
+	<checkbox id = "Fulham" label="Fulham" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Liverpool" label="Liverpool" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "ManUtd" label="Man Utd" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "ManCity" label="Man City" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Newcastle" label="Newcastle" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Norwich" label="Norwich" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "QPR" label="QPR" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Stoke" label="Stoke" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Sunderland" label="Sunderland" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Swansea" label="Swansea" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Tottenham" label="Tottenham" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "WestBrom" label="W Brom" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Wigan" label="Wigan" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
+	<checkbox id = "Wolves" label="Wolves" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
 	</label>
 	<html:hr/>
-  
-<description id ="all_feed_0" width = "290px"/><html:hr/>
-<description id ="all_feed_1" width = "290px"></description><html:hr/>
-<description id ="all_feed_2" width = "290px"/><html:hr/>
-<description id ="all_feed_3" width = "290px"/><html:hr/>
-<description id ="all_feed_4" width = "290px"/><html:hr/>
-<description id ="all_feed_5" width = "290px"/><html:hr/>
-<description id ="all_feed_6" width = "290px"/><html:hr/>
-<description id ="all_feed_7" width = "290px"/><html:hr/>
-<description id ="all_feed_8" width = "290px"/><html:hr/>
-<description id ="all_feed_9" width = "290px"/><html:hr/>
-<description id ="all_feed_10" width = "290px"/><html:hr/>
-<description id ="all_feed_11" width = "290px"/><html:hr/>
-<description id ="all_feed_12" width = "290px"/><html:hr/>
-<description id ="all_feed_13" width = "290px"/><html:hr/>
-<description id ="all_feed_14" width = "290px"/><html:hr/>
-<description id ="all_feed_15" width = "290px"/><html:hr/>
-<description id ="all_feed_16" width = "290px"/><html:hr/>
-<description id ="all_feed_17" width = "290px"/><html:hr/>
-<description id ="all_feed_18" width = "290px"/><html:hr/>
-<description id ="all_feed_19" width = "290px"/><html:hr/>
-<description id ="all_feed_20" width = "290px"/><html:hr/>
-<description id ="all_feed_21" width = "290px"/><html:hr/>
-<description id ="all_feed_22" width = "290px"/><html:hr/>
-<description id ="all_feed_23" width = "290px"/><html:hr/>
-<description id ="all_feed_24" width = "290px"/><html:hr/>
-<description id ="all_feed_25" width = "290px"/><html:hr/>
-<description id ="all_feed_26" width = "290px"/><html:hr/>
-<description id ="all_feed_27" width = "290px"/><html:hr/>
-<description id ="all_feed_28" width = "290px"/><html:hr/>
-<description id ="all_feed_29" width = "290px"/><html:hr/>
-<description id ="all_feed_30" width = "290px"/><html:hr/>
-<description id ="all_feed_31" width = "290px"/><html:hr/>
-<description id ="all_feed_32" width = "290px"/><html:hr/>
-<description id ="all_feed_33" width = "290px"/><html:hr/>
-<description id ="all_feed_34" width = "290px"/><html:hr/>
-<description id ="all_feed_35" width = "290px"/><html:hr/>
-<description id ="all_feed_36" width = "290px"/><html:hr/>
-<description id ="all_feed_37" width = "290px"/><html:hr/>
-<description id ="all_feed_38" width = "290px"/><html:hr/>
-<description id ="all_feed_39" width = "290px"/><html:hr/>
-<description id ="all_feed_40" width = "290px"/><html:hr/>
-<description id ="all_feed_41" width = "290px"/><html:hr/>
-<description id ="all_feed_42" width = "290px"/><html:hr/>
-<description id ="all_feed_43" width = "290px"/><html:hr/>
-<description id ="all_feed_44" width = "290px"/><html:hr/>
-<description id ="all_feed_45" width = "290px"/><html:hr/>
-<description id ="all_feed_46" width = "290px"/><html:hr/>
-<description id ="all_feed_47" width = "290px"/><html:hr/>
-<description id ="all_feed_48" width = "290px"/><html:hr/>
-<description id ="all_feed_49" width = "290px"/><html:hr/>
-<description id ="all_feed_50" width = "290px"/>
+  <label id = "Heading-comm"> <a href = "http://www.bbc.co.uk/sport/0/football">BBC Commentary Stream</a><html:hr/></label>
+<description id ="all_feed_0" width = "290px" class = "comm_feed"/><html:hr/>
+<description id ="all_feed_1" width = "290px" class = "comm_feed"/><html:hr/>
+<description id ="all_feed_2" width = "290px" class = "comm_feed"/><html:hr/>
+<description id ="all_feed_3" width = "290px" class = "comm_feed"/><html:hr/>
+<description id ="all_feed_4" width = "290px" class = "comm_feed"/><html:hr/>
+<description id ="all_feed_5" width = "290px" class = "comm_feed"/><html:hr/>
+<description id ="all_feed_6"  class = "comm_feed" width = "290px"/><html:hr/>
+<description id ="all_feed_7" class = "comm_feed" width = "290px"/><html:hr/>
+<description id ="all_feed_8" class = "comm_feed" width = "290px"/><html:hr/>
+<description id ="all_feed_9" class = "comm_feed" width = "290px"/><html:hr/>
+<description id ="all_feed_10" class = "comm_feed" width = "290px"/><html:hr/>
+<description id ="all_feed_11" class = "comm_feed" width = "290px"/><html:hr/>
+<description id ="all_feed_12" class = "comm_feed" width = "290px"/><html:hr/>
+<description id ="all_feed_13" class = "comm_feed" width = "290px"/><html:hr/>
+<description id ="all_feed_14" class = "comm_feed" width = "290px"/><html:hr/>
+<description id ="all_feed_15" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_16" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_17" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_18" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_19" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_20" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_21" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_22" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_23" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_24" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_25" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_26" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_27" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_28" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_29" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_30" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_31" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_32" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_33" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_34" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_35" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_36" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_37" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_38" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_39" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_40" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_41" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_42" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_43" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_44" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_45" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_46" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_47" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_48" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_49" class = "comm_feed"  width = "290px"/><html:hr/>
+<description id ="all_feed_50" class = "comm_feed"  width = "290px"/>
    </vbox>
    
   </panel>  
