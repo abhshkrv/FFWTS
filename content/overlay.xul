@@ -16,9 +16,19 @@
   <vbox id="feed_box" style="overflow-y:auto; overflow-x:hidden;">
   <label id = "Heading1"> Fergie Fergie, What's the score?<html:hr/></label>
 	<label id = "options"> <button id = "expand" oncommand="toggleOptions()" >+</button>Options</label>
-	<label id = "update">Update every<textbox id="mins" onchange="update_time()" value ='1'></textbox>mins</label>
-	<checkbox label="Sound" id = "sound" checked="false" hidden="true"/>
+	<label id = "update">Update every
+	<menulist label="1" >
+  <menupopup onclick ="timeChange()">
+    <menuitem id ="1min" label="1" />
+    <menuitem id ="5min" label="5"/>
+    <menuitem id ="10min" label="10" />
+    <menuitem id ="15min" label="15"/>
+  </menupopup>
+</menulist>
+mins</label>
+	<checkbox label="Sound" id = "sound" checked="false" hidden="true" />
 	<checkbox label="Pause" id = "pause" checked="false" oncommand="pause_addon()" />
+	<label id = "team-heading" >Teams to follow :</label>
 	<label id = "teams">
 	<checkbox id ="Arsenal" label="Arsenal" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
 	<checkbox id = "AstonVilla" label="Aston Villa" checked="false" class ="team-name"  oncommand="loadAllstream()"/>
@@ -97,7 +107,23 @@
    </vbox>
    
   </panel>  
-    
+<panel id = "popup_text" width = "300">
+  <vbox>
+  <description id ="current_feed" style="width:300px;">
+  
+
+ 
+  </description>
+  
+  
+  <hbox align = "right">
+  <button id = "prev" style="list-style-image: url('prev.png')" onclick="showPrevFeed()" align ="left" width = "16"/> <label id = "feed_number" value="50" ></label><label>/50</label>  <button id="next" align ="right" onclick="showNextFeed()" width = "16" style="list-style-image: url('next.png')"/>
+    </hbox>
+   </vbox>
+   
+  </panel>    
+
+  
      <button id = "yo" value = "click" popup="full_text" style="list-style-image: url('abihereyougo.png')"  context="optionsmenu" ></button>
 	 <button id = "yo1" value = "click" popup="full_text" style="list-style-image: url('logo.jpg')"  context="optionsmenu"  hidden="true"></button>
     </toolbar>
@@ -110,7 +136,7 @@
   </menupopup>
     <toolbox id="navigator-toolbox">
 
-  <toolbar  id="nav-toolbar">
+  <toolbar  id="nav-toolbar" hidden="true">
   <button label="" onclick="displayDate()" style="list-style-image: url('logo.jpg')"  hidden="true" />
 	<label id="unread" value = "9"  hidden="true"></label>
 	<menulist id = "matches"  hidden="true">
@@ -125,29 +151,15 @@
 <popupset>
   <menupopup id="optionsmenu">
     <menuitem label="Go to BBC SPORT" oncommand="openBBC()"/>
-    <menuitem label="Preferences"  oncommand="openPrefWindow()"/>
+   
   </menupopup>
 </popupset>
 
 
-<toolbar id = "FFWTS"  >
-  <panel id = "popup_text" width = "300">
-  <vbox>
-  <description id ="current_feed" style="width:300px;">
+<toolbar id = "FFWTS" hidden="true" >
   
-
- 
-  </description>
-  
-  
-  <hbox align = "right">
-  <button id = "prev" style="list-style-image: url('prev.png')" onclick="showPrevFeed()" align ="left" width = "16"/> <label id = "feed_number" value="50" ></label><label>/50</label>  <button id="next" align ="right" onclick="showNextFeed()" width = "16" style="list-style-image: url('next.png')"/>
-    </hbox>
-   </vbox>
-   
-  </panel>  
     <description value="" popup="popup_text"/>
-     <button style="list-style-image: url('logo.png')" popup="popup_text" context="optionsmenu"></button>
+     <button style="list-style-image: url('logo.png')" popup="popup_text" context="optionsmenu" hidden="true"></button>
 	 <audio xmlns="http://www.w3.org/1999/xhtml" id="clickSound" src="click.ogg" />
     </toolbar>
 	

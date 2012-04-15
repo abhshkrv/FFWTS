@@ -3,7 +3,8 @@ var array = new Array();
 var oldData = new Array();
 var isRead = (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
 var pause = false;
-var time  = 1;
+var time  = 60000;
+
 function test()
 {
 	alert ("YAY!!");
@@ -37,6 +38,8 @@ function pause_addon()
 		document.getElementById("yo1").hidden = false;
 	
 	}
+	
+
 }
 
 function displayDate()
@@ -77,9 +80,32 @@ function displayDate()
 		//document.getElementById('current').innerHTML  ="sss";
 		//alert( "done");
 	  //return xmlHttp.responseText;
-		}
 	}
 	
+	
+	
+		
+}
+	
+function timeChange()
+{
+	if(document.getElementById( '5min' ).selected = true)
+{
+		time = 300000;
+		alert(time);
+}
+else if (document.getElementById( '15min' ).selected = true)
+{
+		time = 900000;
+		alert(time);
+}
+else if(document.getElementById( '10min' ).selected = true)
+{
+		time = 600000;
+		alert(time);
+}
+else time = 60000;
+	}
 	
 
 function updateUnread(oldArray, newArray)
@@ -213,14 +239,14 @@ function loadAllstream()
 	var Sunderland = ['Sunderland', 'Mignolet', 'Bardsley', 'Turner', 'Kilgallon', 'Richardson', 'Larsson', 'Gardner', 'Colback', 'McClean', 'Bendtner', 'Sessegnon','Westwood', 'Bridge', 'Campbell', 'Vaughan', 'Ji', 'Meyler', 'Kyrgiakos'];
 	var QPR = [ 'QPR', 'Kenny', 'Onuoha', 'Ferdinand', 'Hill', 'Taiwo', 'Barton', 'Diakite', 'Derry', 'Mackie', 'Zamora', 'Taarabt','Cerny', 'Gabbidon', 'Traore', 'Buzsaky', 'Young', 'Helguson', 'Wright-Phillips'];
 	var WestBrom = ['West Brom', 'Foster', 'Jones', 'McAuley', 'Olsson', 'Ridgewell', 'Brunt', 'Mulumbu', 'Dorrans', 'Thomas', 'Fortune', 'Odemwingie','Daniels', 'Andrews', 'Long', 'Shorey', 'Dawson', 'Cox', 'Scharner'];
-	var ManUtd = (  'Manchester United', 'United' , 'De Gea', 'Jones', 'Ferdinand', 'Evans', 'Evra', 'Valencia', 'Giggs', 'Carrick', 'Young', 'Rooney', 'Hernandez', 'Amos', 'Smalling', 'Park', 'Nani', 'Welbeck', 'Cleverley', 'Pogba');
+	var ManUtd = [  'Manchester United', 'United' , 'De Gea', 'Jones', 'Ferdinand', 'Evans', 'Evra', 'Valencia', 'Giggs', 'Carrick', 'Young', 'Rooney', 'Hernandez', 'Amos', 'Smalling', 'Park', 'Nani', 'Welbeck', 'Cleverley', 'Pogba'];
 	var Bolton = ['Bolton'];
-	var AstonVilla = ['Villa'];
-	var Chelsea=['Chelsea'];
+	var AstonVilla = ['Villa','Aston Villa', 'Given', 'Hutton', 'Collins', 'Baker', 'Lichaj', 'Bannan', 'Ireland', 'Clark', 'Gardner', 'Weimann','Agbonlahor','Guzan','Zogbia', 'Delfouneso', 'Heskey', 'Cuellar', 'Johnson', 'Carruthers'];
+	var Chelsea=['Chelsea','Cech', 'Bosingwa', 'Terry', 'Luiz', 'Cole', 'Ramires', 'Lampard', 'Mikel', 'Kalou', 'Drogba', 'Mata', 'Turnbull', 'Essien', 'Torres', 'Malouda', 'Meireles', 'Sturridge', 'Cahill'];
 	var Newcastle=['Newcastle'];
 	var Fulham=['Fulham'];
 	var Stoke=['Stoke'];
-	var Tottenham=['Spurs'];
+	var Tottenham=['Spurs','Tottenham','Hotspur','Cudicini', 'Walker', 'Gallas', 'King', 'Assou-Ekotto', 'Lennon', 'Modric', 'Parker', 'Bale', 'Adebayor', 'Van der Vaart', 'Friedel', 'Giovani', 'Defoe', 'Rose', 'Livermore', 'Sandro', 'Nelsen'];
 	var Wigan=['Wigan'];
 	var WestBrom = ['WestBrom'];
 	var Wolves=['Wolves'];
@@ -407,8 +433,8 @@ function loadAllstream()
 function toggleOptions()
 {
 	//alert("here");
-	if(document.getElementById('sound').hidden == false)
-	{document.getElementById('sound').hidden = true;
+	if(document.getElementById('pause').hidden == false)
+	{document.getElementById('team-heading').hidden = true;
 	document.getElementById('update').hidden = true;
 	document.getElementById('teams').hidden = true;
 	document.getElementById('pause').hidden =true;
@@ -416,9 +442,9 @@ function toggleOptions()
 	}
 	
 	
-	if(document.getElementById('sound').hidden == true)
+	if(document.getElementById('pause').hidden == true)
 	{
-		document.getElementById('sound').hidden = false;
+		document.getElementById('team-heading').hidden = false;
 		document.getElementById('update').hidden = false;
 		document.getElementById('teams').hidden = false;
 		document.getElementById('pause').hidden =false;

@@ -27,6 +27,12 @@ opacity:1;
 
 }
 
+#team-heading
+{
+font-weight: bold;
+font-family: Kalinga,sans-serif;
+}
+
 #current_feed{
 padding: 3px;
 color:#acacab;
@@ -95,13 +101,14 @@ background-color: #dbdbdb;
 max-width : 375px;
 min-width: 375px;
 max-height : 600px;
+list-style-image:url('background.jpg');
 }
 
 #feed_box{
 background-color: #dbdbdb;
 width:330px;
 max-height : 600px;
-background-image:url('background.jpg');
+list-style-image:url('background.jpg');
 
 }
 
