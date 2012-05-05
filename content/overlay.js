@@ -42,7 +42,7 @@ function pause_addon()
 
 }
 
-function displayDate()
+function displayPopUp()
 {
 	//alert(pause);
 	//alert("start");
@@ -141,7 +141,7 @@ alert("ffwts started");
 //displayDate();
 //var tmr = require('timer');
 
-setInterval(displayDate, 10000); // no need for an anon function since you don't pass any arguments to yo
+setInterval(displayPopUp, 10000); // no need for an anon function since you don't pass any arguments to yo
 //document.getElementById( "matches").appendItem( "match1", "1");
 //setTimeout(test(), 5000);
 //alert("test");
