@@ -137,7 +137,7 @@ mins</label>
     <toolbox id="navigator-toolbox">
 
   <toolbar  id="nav-toolbar" hidden="true">
-  <button label="" onclick="displayDate()" style="list-style-image: url('logo.jpg')"  hidden="true" />
+  <button label="" onclick="displayPopUp()" style="list-style-image: url('logo.jpg')"  hidden="true" />
 	<label id="unread" value = "9"  hidden="true"></label>
 	<menulist id = "matches"  hidden="true">
   <menupopup />
